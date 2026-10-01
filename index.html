@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FurniCasa | Modern Furniture</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <!-- Logo -->
+            <a href="#home" class="logo">
+                Furni<span>Casa</span>
+            </a>
+
+            <!-- Navigation -->
+            <nav class="navbar" id="navbar">
+
+                <a href="#home" class="active">Home</a>
+                <a href="#categories">Categories</a>
+                <a href="#products">Products</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+
+            </nav>
+
+            <!-- Header Icons -->
+            <div class="nav-icons">
+
+                <button class="icon-btn" id="searchBtn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+                <button class="icon-btn" id="favoriteBtn">
+                    <i class="fa-regular fa-heart"></i>
+                    <span class="counter" id="favoriteCount">0</span>
+                </button>
+
+                <button class="icon-btn cart-btn" id="cartBtn">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="counter" id="cartCount">0</span>
+                </button>
+
+                <!-- Mobile Menu -->
+                <button class="menu-btn" id="menuBtn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= SEARCH OVERLAY ================= -->
+
+    <div class="search-overlay" id="searchOverlay">
+
+        <div class="search-box">
+
+            <button class="close-search" id="closeSearch">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <h2>Find Your Furniture</h2>
+
+            <div class="search-input">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search furniture..."
+                >
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content container">
+
+            <div class="hero-text">
+
+                <p class="small-title">
+                    MODERN FURNITURE COLLECTION
+                </p>
+
+                <h1>
+                    Make Your Home
+                    <span>Beautiful.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Discover elegant furniture designed to make
+                    your home comfortable, stylish and uniquely yours.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#products" class="btn primary-btn">
+                        Shop Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="#categories" class="btn secondary-btn">
+                        Explore Collection
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FEATURES ================= -->
+
+    <section class="features">
+
+        <div class="container features-grid">
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-truck"></i>
+                </div>
+
+                <div>
+                    <h3>Free Delivery</h3>
+                    <p>On orders over $500</p>
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+
+                <div>
+                    <h3>Secure Payment</h3>
+                    <p>100% secure checkout</p>
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-rotate-left"></i>
+                </div>
+
+                <div>
+                    <h3>Easy Returns</h3>
+                    <p>30 days return policy</p>
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-headset"></i>
+                </div>
+
+                <div>
+                    <h3>24/7 Support</h3>
+                    <p>We're here to help</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CATEGORIES ================= -->
+
+    <section class="categories section-padding" id="categories">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <div>
+
+                    <p class="section-subtitle">
+                        EXPLORE COLLECTION
+                    </p>
+
+                    <h2 class="section-title">
+                        Shop By Category
+                    </h2>
+
+                </div>
+
+                <p class="section-description">
+                    Find the perfect pieces to complete
+                    every room in your home.
+                </p>
+
+            </div>
+
+
+            <div class="category-grid">
+
+                <div class="category-card" data-category="Sofas">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80"
+                        alt="Sofas"
+                    >
+
+                    <div class="category-overlay">
+
+                        <h3>Sofas</h3>
+
+                        <button class="category-btn">
+                            Explore
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="category-card" data-category="Chairs">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=800&q=80"
+                        alt="Chairs"
+                    >
+
+                    <div class="category-overlay">
+
+                        <h3>Chairs</h3>
+
+                        <button class="category-btn">
+                            Explore
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="category-card" data-category="Tables">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?auto=format&fit=crop&w=800&q=80"
+                        alt="Tables"
+                    >
+
+                    <div class="category-overlay">
+
+                        <h3>Tables</h3>
+
+                        <button class="category-btn">
+                            Explore
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="category-card" data-category="Beds">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80"
+                        alt="Beds"
+                    >
+
+                    <div class="category-overlay">
+
+                        <h3>Beds</h3>
+
+                        <button class="category-btn">
+                            Explore
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PRODUCTS ================= -->
+
+    <section class="products section-padding" id="products">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <div>
+
+                    <p class="section-subtitle">
+                        OUR COLLECTION
+                    </p>
+
+                    <h2 class="section-title">
+                        Featured Furniture
+                    </h2>
+
+                </div>
+
+                <p class="section-description">
+                    Carefully selected pieces for modern living.
+                </p>
+
+            </div>
+
+
+            <!-- Filters -->
+
+            <div class="products-controls">
+
+                <div class="filter-buttons">
+
+                    <button class="filter-btn active" data-filter="all">
+                        All
+                    </button>
+
+                    <button class="filter-btn" data-filter="Sofas">
+                        Sofas
+                    </button>
+
+                    <button class="filter-btn" data-filter="Chairs">
+                        Chairs
+                    </button>
+
+                    <button class="filter-btn" data-filter="Tables">
+                        Tables
+                    </button>
+
+                    <button class="filter-btn" data-filter="Beds">
+                        Beds
+                    </button>
+
+                </div>
+
+                <select id="sortProducts">
+
+                    <option value="default">
+                        Sort By
+                    </option>
+
+                    <option value="low">
+                        Price: Low to High
+                    </option>
+
+                    <option value="high">
+                        Price: High to Low
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Products Container -->
+
+            <div class="products-grid" id="productsGrid">
+
+                <!-- JavaScript will add products here -->
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="about section-padding" id="about">
+
+        <div class="container about-grid">
+
+            <div class="about-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=1000&q=80"
+                    alt="Modern Interior"
+                >
+
+                <div class="experience-box">
+
+                    <strong>10+</strong>
+
+                    <span>
+                        Years of<br>
+                        Experience
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="about-content">
+
+                <p class="section-subtitle">
+                    ABOUT FURNICASA
+                </p>
+
+                <h2 class="section-title">
+                    Furniture That Makes
+                    <span>Home.</span>
+                </h2>
+
+                <p>
+                    At FurniCasa, we believe that furniture is more
+                    than just something you put in a room.
+                    It's a reflection of your personality and lifestyle.
+                </p>
+
+                <p>
+                    Our collection combines timeless design,
+                    quality materials and everyday comfort to
+                    create pieces you'll love for years.
+                </p>
+
+                <a href="#products" class="btn primary-btn">
+                    Discover More
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= NEWSLETTER ================= -->
+
+    <section class="newsletter">
+
+        <div class="container newsletter-content">
+
+            <div>
+
+                <p class="section-subtitle">
+                    STAY UPDATED
+                </p>
+
+                <h2>
+                    Get Inspired.
+                    <span>Stay Updated.</span>
+                </h2>
+
+                <p>
+                    Subscribe to receive new collections,
+                    offers and interior inspiration.
+                </p>
+
+            </div>
+
+
+            <form id="newsletterForm">
+
+                <input
+                    type="email"
+                    id="emailInput"
+                    placeholder="Enter your email address"
+                    required
+                >
+
+                <button type="submit" class="btn primary-btn">
+                    Subscribe
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="contact section-padding" id="contact">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <div>
+
+                    <p class="section-subtitle">
+                        GET IN TOUCH
+                    </p>
+
+                    <h2 class="section-title">
+                        Contact Us
+                    </h2>
+
+                </div>
+
+                <p class="section-description">
+                    Have a question? We'd love to hear from you.
+                </p>
+
+            </div>
+
+
+            <div class="contact-grid">
+
+                <div class="contact-info">
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                        <div>
+                            <h3>Visit Us</h3>
+                            <p>123 Design Street, Cairo, Egypt</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+
+                        <div>
+                            <h3>Call Us</h3>
+                            <p>+20 100 123 4567</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+
+                        <div>
+                            <h3>Email Us</h3>
+                            <p>hello@furnicasa.com</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <form class="contact-form" id="contactForm">
+
+                    <div class="form-row">
+
+                        <input
+                            type="text"
+                            placeholder="Your Name"
+                            required
+                        >
+
+                        <input
+                            type="email"
+                            placeholder="Your Email"
+                            required
+                        >
+
+                    </div>
+
+                    <input
+                        type="text"
+                        placeholder="Subject"
+                        required
+                    >
+
+                    <textarea
+                        rows="6"
+                        placeholder="Your Message"
+                        required
+                    ></textarea>
+
+                    <button type="submit" class="btn primary-btn">
+                        Send Message
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+
+                <a href="#home" class="logo">
+                    Furni<span>Casa</span>
+                </a>
+
+                <p>
+                    Beautiful furniture for beautiful homes.
+                    Designed for modern living.
+                </p>
+
+                <div class="social-icons">
+
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#categories">Categories</a>
+                <a href="#about">About Us</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Categories</h3>
+
+                <a href="#products">Sofas</a>
+                <a href="#products">Chairs</a>
+                <a href="#products">Tables</a>
+                <a href="#products">Beds</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Customer Care</h3>
+
+                <a href="#">Shipping</a>
+                <a href="#">Returns</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 FurniCasa. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= CART SIDEBAR ================= -->
+
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <aside class="cart-sidebar" id="cartSidebar">
+
+        <div class="cart-header">
+
+            <h2>
+                Your Cart
+            </h2>
+
+            <button id="closeCart">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+
+
+        <div class="cart-items" id="cartItems">
+
+            <!-- Cart items will be added using JavaScript -->
+
+        </div>
+
+
+        <div class="cart-footer">
+
+            <div class="cart-total">
+
+                <span>Total</span>
+
+                <strong id="cartTotal">
+                    $0
+                </strong>
+
+            </div>
+
+            <button class="checkout-btn" id="checkoutBtn">
+                Proceed to Checkout
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= PRODUCT MODAL ================= -->
+
+    <div class="product-modal" id="productModal">
+
+        <div class="modal-content">
+
+            <button class="modal-close" id="modalClose">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="modal-grid">
+
+                <div class="modal-image">
+
+                    <img id="modalImage" src="" alt="Product">
+
+                </div>
+
+                <div class="modal-info">
+
+                    <span id="modalCategory">
+                        Category
+                    </span>
+
+                    <h2 id="modalTitle">
+                        Product Name
+                    </h2>
+
+                    <div class="modal-rating">
+                        ★★★★★
+                        <span>(4.9)</span>
+                    </div>
+
+                    <p id="modalDescription">
+                        Product description.
+                    </p>
+
+                    <strong class="modal-price" id="modalPrice">
+                        $0
+                    </strong>
+
+                    <button
+                        class="btn primary-btn modal-cart-btn"
+                        id="modalAddToCart"
+                    >
+                        Add To Cart
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= TOAST ================= -->
+
+    <div class="toast" id="toast">
+
+        <i class="fa-solid fa-circle-check"></i>
+
+        <span id="toastMessage">
+            Added to cart!
+        </span>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
